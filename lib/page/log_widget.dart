@@ -35,6 +35,9 @@ class _LogWidgetState extends State<LogWidget>
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
+         iconTheme: IconThemeData(
+    color: Colors.black, // Đổi màu tất cả icon trong AppBar
+  ),
         title: Text(
           widget.netOptions.reqOptions!.url!,
           style: TextStyle(fontSize: 11, color: Colors.black),
